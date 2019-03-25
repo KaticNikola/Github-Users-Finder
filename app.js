@@ -4,7 +4,7 @@ const ui = new UI;
 const searchUser =  document.getElementById('searchUsers');
 
 searchUser.addEventListener('keyup', (e) => {
-    const userText = e.target.value;t 
+    const userText = e.target.value;
     if(userText !== ''){
         github.getUser(userText)
             .then( data =>{
